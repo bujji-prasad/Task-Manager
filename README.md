@@ -1,6 +1,6 @@
 # Task Management System
 
-This is a Task Management System that provides CRUD operations to manage tasks efficiently. The application allows users to create, view, update, and delete tasks with various filtering, searching, and pagination features.
+This is a Task Management System that provides CRUD operations to manage tasks efficiently. The application allows users to create, view, update, and delete tasks with various filtering, searching, securing using jwt token, user login , user registration and pagination features.
 
 ## Table of Contents
 1. [Overview](#overview)
