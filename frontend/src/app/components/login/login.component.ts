@@ -79,6 +79,7 @@ export class LoginComponent implements OnInit{
       detail: 'Login Success, Redirecting...', 
       life: 2000 
     });
+    
     setTimeout(() => {
       this.loginForm.reset();
       this.router.navigate(['/home/dashboard']); // Navigate to a protected route

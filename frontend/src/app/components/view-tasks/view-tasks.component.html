@@ -144,7 +144,7 @@
                 <!-- Due Date (Date Picker) - Same height as Title & Assigned To -->
                 <div class="flex-1">
                     <label for="dueDate" class="text-gray-700 font-medium " >Due Date*</label>
-                    <p-datepicker id="dueDate" formControlName="dueDate" class="w-full h-12"  ></p-datepicker>
+                    <p-datepicker id="dueDate" formControlName="dueDate" [minDate] = "today" class="w-full h-12"  ></p-datepicker>
                     <!-- Error message for Due Date -->
                     <div *ngIf="formData.get('dueDate')?.touched && formData.get('dueDate')?.invalid" class="text-red-500 text-sm mt-1">
                         <div *ngIf="formData.get('dueDate')?.errors?.['required']">Due Date is required.</div>

@@ -67,7 +67,7 @@ export class UserService {
     localStorage.setItem('token',this.userInfo.token);
     localStorage.setItem('loginStatus' , 'true');
     this.setLoginStatus(true);  // Set login status to true
-    window.location.reload();
+    
   }
 
   // Get the user info
@@ -84,6 +84,7 @@ export class UserService {
     this.setLoginStatus(false);  
     session.loginStatus = false;
     this.router.navigate(['/login']);
+    window.location.reload();
   }
 
   forgotPassword(email : string): Observable<any>{

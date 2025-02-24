@@ -80,6 +80,9 @@ export class ViewTasksComponent {
     users = [
       { name: 'User 1', id: '1' },
     ];
+
+    //date to update 
+    today : any = new Date();
  
     // Priority options for the dropdown
     priorityOptions = [
@@ -243,6 +246,7 @@ export class ViewTasksComponent {
  
     editCurrentTask(task:any){
       this.editMode = true;
+      this.today = this.today - task.dueDate
      
       if(this.formData){
         // Set form values directly using patchValue
