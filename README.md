@@ -82,15 +82,7 @@ The backend task schema is defined as follows:
 - Hash and store the password securely.
 - Return appropriate error messages for duplicate emails.
 
-## Error Handling
 
-- **Display user-friendly error messages** on the UI.
-- **Use appropriate HTTP status codes**:
-  - `200` for success responses.
-  - `400` for client errors (e.g., invalid input).
-  - `401` for unauthorized access (e.g., invalid login credentials).
-  - `500` for server errors (e.g., database issues).
-- **Log errors in the backend** for debugging purposes and to track issues.
 
 ## Authentication and Authorization
 
@@ -173,5 +165,16 @@ The backend task schema is defined as follows:
 ## Date Format Handling
 - Store Dates in UTC format in the database (except dob).
 - Display Dates in MM/DD/YYYY format on the frontend for better user readability.
+
+
+## Error Handling
+
+- **Display user-friendly error messages** on the UI.
+- **Use appropriate HTTP status codes**:
+  - `200` for success responses.
+  - `400` for client errors (e.g., invalid input).
+  - `401` for unauthorized access (e.g., invalid login credentials).
+  - `500` for server errors (e.g., database issues).
+- **Log errors in the backend** for debugging purposes and to track issues.
 
 
